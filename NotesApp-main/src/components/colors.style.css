@@ -1,0 +1,32 @@
+.colorNotes {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.colorNotes.active {
+  position: relative;
+}
+
+.colorNotes.active::after {
+  position: absolute;
+  content: "✓";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: 900;
+  color: white;
+}
+
+.reset {
+  background: conic-gradient(#fff, #ff5577);
+}
+
+@media  screen and (max-width: 640px) {
+  .colorNotes {
+    width: 27px;
+    height: 27px;
+  }
+}
